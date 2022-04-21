@@ -16,16 +16,16 @@ public:
         return realSize;
     }
 
-    double getAt(int index) const;
+    double getAt(int index) const; // O(1)
 
     // Add new element
     void add(double element); // Best O(1), worse O(n), AC(n) = O(1) - average
 
-    double operator[](int index) const {
+    double operator[](int index) const { // O(1)
         return getAt(index);
     }
 
-    double &operator[](int index);
+    double &operator[](int index); // O(1)
 
 private:
     double *buffer; // Buffer
