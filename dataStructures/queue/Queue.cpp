@@ -1,7 +1,7 @@
 #include <cassert>
 #include "Queue.h"
 
-Queue::Queue(int bufferSize): bufferSize(bufferSize), head(0), tail(0) {
+Queue::Queue(int bufferSize) : bufferSize(bufferSize), head(0), tail(0) {
     buffer = new int[bufferSize];
 }
 
